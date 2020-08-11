@@ -1,4 +1,4 @@
 ---
 feature:
-  name: fx
+  name: foo
   enabled: true
