@@ -1,0 +1,20 @@
+server:
+  port: 8888
+  
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+spring:
+  profiles: cloud
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Lesslimit/dante-cfg
+          
+---
+feature:
+  name: fx
+  enabled: true
